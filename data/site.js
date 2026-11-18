@@ -66,8 +66,8 @@ window.SITE = {
       contact: {
         kicker: { en: "05 — Contact", fa: "۰۵ — تماس" },
         title:  { en: "Let’s work together", fa: "بیایید با هم کار کنیم" },
-        lead:   { en: "LinkedIn is the fastest way to reach me. The code is on GitHub, and the data and trained models are on Kaggle.",
-                  fa: "سریع‌ترین راه ارتباط با من لینکدین است. کدها روی گیت‌هاب‌اند و داده‌ها و مدل‌های آموزش‌دیده روی کگل." }
+        lead:   { en: "Email is the fastest way to reach me. The code is on GitHub, the data and trained models are on Kaggle.",
+                  fa: "سریع‌ترین راه ارتباط با من ایمیل است. کدها روی گیت‌هاب‌اند و داده‌ها و مدل‌های آموزش‌دیده روی کگل." }
       }
     },
 
@@ -123,7 +123,10 @@ window.SITE = {
     avatar: "assets/img/profile.jpg",
     avatarFallback: "https://avatars.githubusercontent.com/u/103846621?v=4",
 
+    email: "garibi.shahla@gmail.com",
+
     links: {
+      email:    "mailto:garibi.shahla@gmail.com",
       github:   "https://github.com/shahla2022",
       kaggle:   "https://www.kaggle.com/sshahla",
       linkedin: "https://www.linkedin.com/in/shahla-garibi-bab660243"

@@ -116,9 +116,6 @@ Written in November 2026 from the public repositories under
 `rahagaribi` Kaggle profiles, and the project descriptions on the Akam team site.
 Worth checking before the site is shared widely:
 
-- **No email button.** `profile.links` has GitHub, Kaggle and LinkedIn. Add
-  `email: "mailto:…"` and the "Email me" button appears first in the hero and the
-  contact section.
 - **The Brain MRI entry is private work** — an IAAA contest submission with no
   repository link, described from the published Kaggle datasets and models. Check it
   is not covered by a confidentiality agreement; deleting the entry means removing
