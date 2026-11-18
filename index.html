@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shahla Gharibi — Backend &amp; Computer Vision Engineer</title>
+  <meta name="description" content="Portfolio of Shahla Gharibi — backend and computer vision engineer working on face recognition, identity verification, image forensics and medical-imaging data." />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Shahla Gharibi — Backend &amp; Computer Vision Engineer" />
+  <meta property="og:description" content="Face recognition, identity verification, image forensics and the data behind them." />
+  <meta property="og:url" content="https://shahla2022.github.io/" />
+  <!-- Open Graph scrapers need an absolute URL; update the host if the
+       site moves to a custom domain or a project-page path. -->
+  <meta property="og:image" content="https://shahla2022.github.io/assets/img/profile.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f766e'/><text y='68' x='50' text-anchor='middle' font-size='58' font-family='system-ui' fill='white'>S</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-t="ui.skip">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="#top">
+      <span class="nav-mark">SG</span>
+      <span class="nav-name" data-t="profile.name">Shahla Gharibi</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Sections">
+      <a href="#about"    data-t="ui.nav.about">About</a>
+      <a href="#projects" data-t="ui.nav.projects">Projects</a>
+      <a href="#kaggle"   data-t="ui.nav.kaggle">Kaggle</a>
+      <a href="#skills"   data-t="ui.nav.skills">Skills</a>
+      <a href="#contact"  data-t="ui.nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="lang-toggle" id="langToggle" type="button"></button>
+
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ───────────────────────────  hero  ─────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> <span data-t="ui.hero.badge"></span></p>
+        <h1 data-t="profile.name">Shahla Gharibi</h1>
+        <p class="hero-role" data-t="profile.role"></p>
+        <p class="hero-tagline" data-t="profile.tagline"></p>
+
+        <div class="hero-actions" id="heroLinks"></div>
+
+        <dl class="stat-row" id="heroStats"></dl>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <img id="avatar" alt="" width="220" height="220" loading="eager" />
+        </div>
+        <div class="portrait-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────  about  ─────────────────────────── -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <p class="section-kicker" data-t="ui.sections.about.kicker"></p>
+      <h2 class="section-title" data-t="ui.sections.about.title"></h2>
+      <div class="about-body" id="aboutBody"></div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────  projects  ───────────────────────── -->
+  <section class="section section-alt" id="projects">
+    <div class="wrap">
+      <p class="section-kicker" data-t="ui.sections.projects.kicker"></p>
+      <h2 class="section-title" data-t="ui.sections.projects.title"></h2>
+      <p class="section-lead" data-t="ui.sections.projects.lead"></p>
+
+      <div class="filters" id="filters" role="group"></div>
+
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="empty-note" id="emptyNote" data-t="ui.projects.empty" hidden></p>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────  kaggle  ────────────────────────── -->
+  <section class="section" id="kaggle">
+    <div class="wrap">
+      <p class="section-kicker" data-t="ui.sections.kaggle.kicker"></p>
+      <h2 class="section-title" data-t="ui.sections.kaggle.title"></h2>
+      <p class="section-lead" data-t="kaggle.blurb"></p>
+
+      <dl class="stat-row stat-row-kaggle" id="kaggleStats"></dl>
+
+      <div class="kaggle-cols">
+        <div class="kaggle-col">
+          <h3 class="col-title" data-t="ui.kaggle.notebooks"></h3>
+          <ul class="entry-list" id="kaggleNotebooks"></ul>
+        </div>
+        <div class="kaggle-col">
+          <h3 class="col-title" data-t="ui.kaggle.models"></h3>
+          <ul class="entry-list" id="kaggleModels"></ul>
+        </div>
+        <div class="kaggle-col">
+          <h3 class="col-title" data-t="ui.kaggle.datasets"></h3>
+          <ul class="chip-list" id="kaggleDatasets"></ul>
+        </div>
+      </div>
+
+      <a class="btn btn-ghost kaggle-cta" id="kaggleLink" href="#" target="_blank" rel="noopener">
+        <span data-t="ui.kaggle.cta"></span>
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────  skills  ────────────────────────── -->
+  <section class="section section-alt" id="skills">
+    <div class="wrap">
+      <p class="section-kicker" data-t="ui.sections.skills.kicker"></p>
+      <h2 class="section-title" data-t="ui.sections.skills.title"></h2>
+      <div class="skill-grid" id="skillGrid"></div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────  contact  ────────────────────────── -->
+  <section class="section" id="contact">
+    <div class="wrap contact-inner">
+      <p class="section-kicker" data-t="ui.sections.contact.kicker"></p>
+      <h2 class="section-title" data-t="ui.sections.contact.title"></h2>
+      <p class="section-lead" data-t="ui.sections.contact.lead"></p>
+      <div class="hero-actions" id="contactLinks"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year"></span> <span data-t="profile.name"></span></p>
+    <p class="footer-meta" data-t="ui.footer.meta"></p>
+  </div>
+</footer>
+
+<script src="data/site.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
